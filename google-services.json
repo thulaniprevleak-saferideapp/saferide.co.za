@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "610769160211",
+    "project_id": "saferide-peld8",
+    "storage_bucket": "saferide-peld8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:610769160211:android:fd5f504328097089cfd7e6",
+        "android_client_info": {
+          "package_name": "com.saferide.saferideapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-BPfyBdHe6maA_W_0iSn9rRN9r3J74UQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
