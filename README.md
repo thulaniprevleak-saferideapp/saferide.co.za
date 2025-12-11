@@ -1,0 +1,1 @@
+saferide is south african born ehailing app that aims to help drivers earn a sustainable income to support their lives,pay car payments and generate a decent income than current low ride prices by other well known apps due to demand and over supply of cars.
