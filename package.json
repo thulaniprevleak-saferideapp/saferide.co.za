@@ -1,0 +1,39 @@
+{
+  "name": "saferide-webapp",
+  "version": "1.0.0",
+  "description": "SafeRide - Driver-Centric E-Hailing and Rideshare Platform Web Application",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "test": "echo \"No tests specified yet\"",
+    "deploy": "echo \"Deployment handled by GitHub Actions\"",
+    "lint": "echo \"Add ESLint configuration if needed\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/saferide.co.za.git"
+  },
+  "keywords": [
+    "rideshare",
+    "e-hailing",
+    "south-africa",
+    "transportation",
+    "driver-app",
+    "firebase"
+  ],
+  "author": "SafeRide Team",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/yourusername/saferide.co.za/issues"
+  },
+  "homepage": "https://www.saferides.co.za",
+  "dependencies": {
+    "firebase": "^10.7.1"
+  },
+  "devDependencies": {},
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

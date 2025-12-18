@@ -1,0 +1,7 @@
+# Placeholder logo - Replace with actual SafeRide logo
+# This is a simple SVG logo placeholder
+<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="20" cy="20" r="18" fill="#1e40af"/>
+  <path d="M12 20 L18 14 L28 20 L18 26 Z" fill="white"/>
+  <circle cx="18" cy="20" r="3" fill="#10b981"/>
+</svg>
