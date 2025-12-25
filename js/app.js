@@ -8,6 +8,7 @@ const signupBtn = document.getElementById('signupBtn');
 const driverSignupBtn = document.getElementById('driverSignupBtn');
 const riderSignupBtn = document.getElementById('riderSignupBtn');
 const contactForm = document.getElementById('contactForm');
+const heroTitle = document.querySelector('.hero-title');
 
 // Mobile Menu Toggle
 if (menuToggle) {
@@ -281,10 +282,24 @@ auth.onAuthStateChanged((user) => {
     }
 });
 
-function updateUIForLoggedInUser(user) {
+async function updateUIForLoggedInUser(user) {
+    // Get user data from Firestore
+    const userDoc = await db.collection('users').doc(user.uid).get();
+    const userData = userDoc.data();
+
     // Update navigation buttons
     if (loginBtn) loginBtn.textContent = 'Dashboard';
     if (signupBtn) signupBtn.textContent = 'Logout';
+
+    // Update hero title based on user type
+    if (userData && heroTitle) {
+        if (userData.userType === 'rider') {
+            heroTitle.innerHTML = 'Request a Ride.<br>Travel with Ease.';
+        } else {
+            // Keep default for drivers or other types
+            heroTitle.innerHTML = 'Drive With Purpose.<br>Earn With Pride.';
+        }
+    }
     
     // Add logout functionality
     if (signupBtn) {
@@ -303,6 +318,11 @@ function updateUIForLoggedOutUser() {
     // Reset navigation buttons
     if (loginBtn) loginBtn.textContent = 'Login';
     if (signupBtn) signupBtn.textContent = 'Sign Up';
+
+    // Reset hero title to default
+    if (heroTitle) {
+        heroTitle.innerHTML = 'Drive With Purpose.<br>Earn With Pride.';
+    }
 }
 
 // Intersection Observer for Animations
